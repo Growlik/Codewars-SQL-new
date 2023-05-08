@@ -1,0 +1,24 @@
+Task
+For each category in the tree-like categories table, calculate how many records in the items table belong to it and its parent categories across all the tree levels.
+
+Notes
+Items can only belong to the leaves of the category tree
+There will be multiple roots for separate category trees
+Order the result by the id column
+Input tables
+-----------------------------------
+|   Table    |   Column    | Type |
+|------------+-------------+------|
+| categories | id          | int  |
+|            | parent      | int  |
+|------------+-------------+------|
+| items      | id          | int  |
+|            | category_id | int  |
+-----------------------------------
+Output table
+------------------
+| Column | Type  |
+|--------+-------|
+| id     | int   |
+| total  | int   |
+------------------
